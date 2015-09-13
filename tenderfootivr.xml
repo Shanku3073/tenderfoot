@@ -1,0 +1,96 @@
+<!--The MIT License (MIT)
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.-->
+
+<dialplan name="Root">
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1" name="welcome">Welcome to the tenderfoot municipal court system. For English press 1</play>
+		<play type="tts" voice="spanish1">For spanish press 2</play>
+		<keypress pressed="1" name="eng">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1" name="citationnumber">Enter the citation number for the ticket you are calling about.  If you do not have a citation number, please press 9 and the pound sign to search for any outstanding citations or failure to appear warrants</play>
+		<keypress pressed="2" name="fetchcitationnumber">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">To confirm your citation, please enter your date of birth using two digit month, two digit day, and two digit year.</play>
+		<keypress pressed="3" name="dob">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">Your Citation number 110852006 for improper passing has a status of FTA warrant issued as of August 21, 2015.  You are to pay a fine of 135.89$ and Court costs of 24.50$. Press 1 if you like to request Amnesty for this warrant, or call Richmond Heights court at 7447 Dale Avenue to dispute this warrant.</play>
+		<keypress pressed="4">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">You have selected a request for amnesty for failure to appear for the court date of your  citation.  You will need to pay a hundred dollar fee for this request and schedule a new court date. To pay by credit card, please select 1.  To pay by Western Union, please select 2</play>
+		<keypress pressed="5">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">You have selected to pay by Credit Card.  After successfully paying for the amnesty fee, you will be returned to the Citation menu where you must either plead guilty and pay all fees and fines associated with this citation, or schedule a new court date</play>
+		<play type="tts" voice="male1">Your Citation number 110852006 for improper passing has a status of FTA warrant issued as of August 21, 2015.  You are to pay a fine of 135.89$ and Court costs of 24.50$. To hear your rights and plead your citation, press 1.  To lodge a complaint regarding your citation, press 2</play>
+		<keypress pressed="6">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">You have selected to lodge a complaint regarding your citation.  According to Tennessee versus Garner, citizens have the right to lodge such complaints and these must be retained and secured by the courts to investigate a potential pattern of abuse.  Lodging a complaint does not impact the status of your citation or your obligation to either appear in court or pay fines and fees associated with your citation.  Press 1 to confirm and attest that you believe your were subjected to a pattern of abuse in relation to your citation, or press 2 to continue.</play>
+		<keypress pressed="7">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">You have the right to legal representation.  If you cannot afford an attorney, one will be appointed by the courts.  If you are a minor you must have legal representation to plead your case.  Select 1 if your do not request an attorney for pleading your case.  Select 2 if you are unable to afford an attorney and require the court to appoint an attorney.</play>
+		<keypress pressed="8">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">As you are not a minor, you may waive your right to an attorney and plead guilty to your Citation 110852006 for improper passing, and pay a fine of 135.89$ and Court costs of 24.50$.  Or you may contest the citation and schedule a court appearance.  Press 1 to plead guilt, or press 2 to schedule a court date</play>
+		<keypress pressed="9">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">You have selected to waive your right to an attorney and plead guilty to Citation 110852006 for improper passing.  By pleading guilty you do not have the right to appeal this case and a judgment against you will appear in public records.  There may be financial consequences to this, such as higher insurance rates or unfavorable information on a background check.  Please consult an attorney if you are in doubt with these consequences before pleading.  To confirm your guilty plea, please press 1.  If you are not pleading guilty, please press 2 to return to the citation menu for other options.</play>
+		<keypress pressed="10">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">A guilty plea has been confirmed.  You must now make payment of the fine and court fee associated with this citation.  The Richmond Heights municipal court has the following payment options are available:  Press 1 for credit or debit card payment, press 2 for Western Union payment instructions, press 3 mailing instructions to pay by check or money order, press 4 for street address of Richmond Heights municipal court to pay cash in person, or select 5 for community service as an alternative to monetary payment.  Please press 9 to repeat these options</play>
+		<keypress pressed="11">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">You have selected 5 to volunteer for community service as an alternative to monetary payment of your fine.  Court fees still apply, and you will be returned to the payment menu to settle this fee.  By selecting community service, you are committing to one of the following available options:  Press 1 for 40 hours of highway and road trash removal, Press 2 for 40 hours of public parks construction and maintenance, or press 3 for 100 hours community outreach for Civic Progress, a non-profit charity organization.  Or press 9 to return to the payment option menu</play>
+		<keypress pressed="12">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">You have selected option number 3 for 100 hours of community service in public outreach to Civic Progress, a non-profit charity organization.  Press 1 to confirm your selection, or press 9 to return to the payment option menu</play>
+		<keypress pressed="13">
+		</keypress>
+	</menu>
+	<menu maxDigits="30" timeout="3500">
+		<play type="tts" voice="male1">Thank you for volunteering for community service in lieu of monetary payment of your fine.  You must enter your telephone number for Civic Progress to contact you concerning your community service.  After entering your telephone number you will be returned to the payment option menu to make of your court costs for this citation.  Please enter your telephone number, including area code.  By entering your telephone number, you will also receive reminder calls of service dates related to your community service.  Failure to appear for your community service will result in forfeiture of this agreement alternative payment of your fine and may result in additional fines and court fees.</play>
+		<keypress pressed="14">
+		</keypress>
+	</menu>
+</dialplan>

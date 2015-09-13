@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tenderfoot Court System|Citation Search</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script>
+$(window).load(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: true,
+        waitBannerAnimation: false,
+        progressBar: false
+    })
+});
+function myPopup() {
+mywindow =window.open( "courtclerk.html","_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400" );
+ mywindow.moveTo(10, 10);
+}
+
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><a href="index.html"><img src="images/logo.png" alt=""></a> </h1>
+      <div class="clear"></div>
+      <div class="menu_block">
+        <nav>
+          <ul class="sf-menu">
+            <li class="current"><a href="index.html">HOME</a></li>
+            <li class="with_ul"><a href="about.html">YOUR CASE</a>
+              <ul>
+                <li><a href="citation.html">Citation No.</a></li>
+                <li><a href="#">Divers License</a></li>
+                <li><a href="ndob.html">Name & DOB</a></li>
+              </ul>
+            </li>
+            <li><a href="practice.html">ATTORNEY LOGIN</a></li>
+            <li><a href="clients.html">COURTS LOGIN</a></li>
+         
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+<div class="top_block tb1">
+  <div class="container_12">
+<div class="grid_4">
+    Please Enter Your Citation Number<input type="text" name="userid"/>
+
+<br />
+<input type="submit" id="subbutton" onclick="myPopup()" />
+</div>
+
+    </div>
+  </div>
+</div>
+<div class="content bdt0">
+  <div class="container_12">
+    <div class="grid_12">
+      <h3 class="head1">INFORMATION</h3>
+    </div>
+    <div class="grid_3">
+      <div class="text1"><img src="images/ic_3.png" alt="" class="icon">Judges & Divisions</div>
+      This is a list of the St. Louis Metropolitian area Judges and the divisions they represent. <br>
+      <a href="#" class="btn">more</a> </div>
+    <div class="grid_3">
+      <div class="text1"><img src="images/icon1.png" alt="" class="icon">Court Locations</div>
+      List of St. Louis area courts with directions, maps, office hours, and contact information. <br>
+      <a href="#" class="btn">more</a> </div>
+    <div class="grid_3">
+      <div class="text1"><img src="images/icon2.png" alt="" class="icon">Court <br> Dates </div>
+      Interactive Calender of planned court dates for the St.Louis Metropolitian Dictrict Courts. <br>
+      <a href="#" class="btn">more</a> </div>
+    <div class="grid_3">
+      <div class="text1"><img src="images/icon4.png" alt="" class="icon">Fine <br> Schedule</div>
+      Schedule of traffic fines, guidlines, and court costs within the St. Louis Metropolitain area. <br>
+      <a href="#" class="btn">more</a> </div>
+  </div>
+</div>
+<div class="content bdt0">
+  <div class="container_12">
+   
+    <div class="grid_3">
+      <div class="text1"><img src="images/icon4.png" alt="" class="icon">Payment Options</div>
+      Online and in-person paymnet options. <br>
+      <a href="#" class="btn">more</a> </div>
+    <div class="grid_3">
+      <div class="text1"><img src="images/ic_1.png" alt="" class="icon">Community Service </div>
+      Community service payment options. <br>
+      <a href="#" class="btn">more</a> </div>
+    <div class="grid_3">
+      <div class="text1"><img src="images/ic_5.png" alt="" class="icon">Amnesty Program </div>
+      Information about amnesty program. <br>
+      <a href="#" class="btn">more</a> </div>
+    <div class="grid_3">
+      <div class="text1"><img src="images/ic_4.png" alt="" class="icon">Report Complience</div>
+      Submit citation complience information. <br>
+      <a href="#" class="btn">more</a> </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <p>Tenderfoot &copy; 2015 
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery CSVToTable</title>
+
+	<link rel="stylesheet" href="css/csvtable.css" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.csvToTable.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.dev.js"></script>
+	
+	<script>
+	$(function() {
+		$('#CSVTable').CSVToTable('courtclerk.csv', { loadingImage: 'images/loading.gif', startLine: 0 });
+		
+	});
+	</script>
+</head>
+<body>
+
+
+<br><br>
+Details of Cases<br>
+<div id="CSVSource" class="source">
+</div>
+
+<div id="CSVTable">
+
+</div>
+
+
+
+</body>
+</html>
